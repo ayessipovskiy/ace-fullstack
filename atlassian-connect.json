@@ -1,0 +1,61 @@
+{
+    "key": "my-app",
+    "name": "My app",
+    "description": "My very first app",
+    "baseUrl": "{{localBaseUrl}}",
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        "installed": "/installed"
+    },
+    "scopes": [
+        "READ"
+    ],
+    "modules": {
+        "generalPages": [
+            {
+                "key": "jira-expression-validator",
+                "location": "system.header/left",
+                "name": {
+                    "value": "Jira Expression Validator"
+                },
+                "url": "/jira-expression-validator"
+            }
+        ],
+        "webSections": [
+            {
+                "key": "Utils",
+                "location": "admin_plugins_menu",
+                "name": {
+                    "value": "Utils"
+                }
+            }
+        ],
+        "webItems": [
+            {
+                "location": "admin_plugins_menu/Utils",
+                "weight": 50,
+                "styleClasses": [
+                    "webitem",
+                    "system-present-webitem"
+                ],
+                "url": "/jira-expression-validator",
+                "context": "page",
+                "target": {
+                    "type": "page",
+                    "options": {
+                        "key": "jira-expression-validator"
+                    }
+                },
+                "tooltip": {
+                    "value": "Jira Expression Validator"
+                },
+                "name": {
+                    "value": "Jira Expression Validator"
+                },
+                "key": "web-item-jira-expression-validator"
+            }
+        ]
+    }
+}
