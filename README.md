@@ -1,7 +1,9 @@
 # Jira Expression Evaluation
 
 `npm install` to install the dependencies
+
 `npm run watch-server` to start the dev-server
+
 `npm run watch-jsx` - to start watching jsx files in order to rebuild them on change
 
 
