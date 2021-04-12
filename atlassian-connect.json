@@ -1,7 +1,7 @@
 {
     "key": "my-app",
-    "name": "My app",
-    "description": "My very first app",
+    "name": "Jira Expression Evaluation",
+    "description": "Jira expression evaluation utility",
     "baseUrl": "{{localBaseUrl}}",
     "authentication": {
         "type": "jwt"
@@ -15,12 +15,16 @@
     "modules": {
         "generalPages": [
             {
-                "key": "jira-expression-validator",
-                "location": "system.header/left",
+                "key": "jira-expression-evaluation",
                 "name": {
-                    "value": "Jira Expression Validator"
+                    "value": "Jira Expression Evaluation"
                 },
-                "url": "/jira-expression-validator"
+                "icon":{
+                    "width": 24,
+                    "height": 24,
+                    "url": "/img/logo.png"
+                  },
+                "url": "/jira-expression-evaluation"
             }
         ],
         "webSections": [
@@ -40,21 +44,21 @@
                     "webitem",
                     "system-present-webitem"
                 ],
-                "url": "/jira-expression-validator",
+                "url": "/jira-expression-evaluation",
                 "context": "page",
                 "target": {
                     "type": "page",
                     "options": {
-                        "key": "jira-expression-validator"
+                        "key": "jira-expression-evaluation"
                     }
                 },
                 "tooltip": {
-                    "value": "Jira Expression Validator"
+                    "value": "Jira Expression Evaluation"
                 },
                 "name": {
-                    "value": "Jira Expression Validator"
+                    "value": "Jira Expression Evaluation 🎈"
                 },
-                "key": "web-item-jira-expression-validator"
+                "key": "web-item-jira-expression-evaluation"
             }
         ]
     }

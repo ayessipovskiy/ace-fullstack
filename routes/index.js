@@ -20,13 +20,13 @@ export default function routes(app, addon) {
         );
     });
 
-    app.get('/jira-expression-validator', /*addon.authenticate(),*/ (req, res) => {
+    app.get('/jira-expression-evaluation', /*addon.authenticate(),*/ (req, res) => {
         // Rendering a template is easy; the render method takes two params: the name of the component or template file, and its props.
         // Handlebars and jsx are both supported, but please note that jsx changes require `npm run watch-jsx` in order to be picked up by the server.
         res.render(
-            'JiraExpressionValidator.jsx', // change this to 'hello-world.jsx' to use the Atlaskit & React version
+            'JiraExpressionEvaluation.jsx', // change this to 'hello-world.jsx' to use the Atlaskit & React version
             {
-                title: 'Hello from route index.js/jira-expression-validator'
+                title: 'Hello from route index.js/jira-expression-evaluation'
                 //, issueId: req.query['issueId']
                 //, browserOnly: true // you can set this to disable server-side rendering for react views
             }

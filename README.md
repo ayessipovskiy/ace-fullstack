@@ -1,7 +1,9 @@
-# Atlassian Connect App using Express
+# Jira Expression Evaluation
 
-Congratulations!
-You've successfully created an Atlassian Connect App using the Express web application framework.
+`npm install` to install the dependencies
+`npm run watch-server` to start the dev-server
+`npm run watch-jsx` - to start watching jsx files in order to rebuild them on change
+
 
 ## What's next?
 
