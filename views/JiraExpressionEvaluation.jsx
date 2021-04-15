@@ -6,7 +6,7 @@ import {postJiraExpression} from "./helpers/requestUtils"
 // eslint-disable-next-line no-unused-vars
 import regeneratorRuntime                         from "regenerator-runtime";
 
-export default class JiraExpressionValidator extends React.Component{
+export default class JiraExpressionEvaluation extends React.Component{
 	constructor(props) {
 		super(props);
 
