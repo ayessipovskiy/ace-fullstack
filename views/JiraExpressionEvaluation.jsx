@@ -52,7 +52,7 @@ export default class JiraExpressionValidator extends React.Component{
 				<form
 					id="main"
 					onSubmit={this.onSubmit}>
-					<h2>Jira Expression Validator</h2>
+					<h2>Jira Expression Evaluation</h2>
 					<hr/>
 						<p>Context Issue:</p>
 						<TextArea
